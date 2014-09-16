@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    
+    <LinearLayout 
+        android:id="@+id/contacts_topheader"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/navbar"
+        android:layout_gravity="center_vertical">
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          android:layout_weight="2"
+            android:gravity="left" >
+
+            <ImageView 
+                android:id="@+id/contact_search"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/search"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+           android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+            <TextView 
+                android:id="@+id/contacts_headerText"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="Contacts"
+                android:textColor="#fff"
+                android:gravity="center_vertical"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          android:layout_weight="2"
+            android:gravity="right" >
+
+            <ImageView 
+                android:id="@+id/contact_add"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:background="@drawable/add_contacts"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include
+        android:id="@+id/contacts_botton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contacts_topheader"
+       
+        layout="@layout/botton_tab" />
+    <LinearLayout 
+        android:id="@+id/contacts_search_lay"
+        android:layout_below="@+id/contacts_botton"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+           
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                 android:background="@drawable/search_box_bg">
+            <EditText 
+                android:id="@+id/contact_serach"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Search"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:paddingBottom="5dp"
+                android:textColor="#000"
+                android:background="#00000000"
+                />
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/contacts_cancel"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:gravity="center">
+                <TextView 
+                    
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Cancel"
+                    android:textColor="#6EB4FD"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View 
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:background="#adadad"/>
+    </LinearLayout>
+
+    <!-- <LinearLayout 
+        android:id="@+id/contacts_list_first_lay"
+        android:layout_below="@+id/contacts_search_lay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/invite_icon"/>
+        <TextView 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:text="Invite Friends"
+           android:textSize="16sp"
+           android:layout_marginLeft="20dp"
+           android:textColor="#004a80"/>
+    </LinearLayout> -->
+    <!-- <LinearLayout 
+        android:id="@+id/contacts_list_second_lay"
+        android:layout_below="@+id/contacts_list_first_lay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/newchat"
+            />
+        <TextView 
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:text="New Chat"
+           android:layout_marginLeft="20dp"
+           android:textSize="16sp"
+           android:textColor="#004a80"/>
+    </LinearLayout> -->
+
+ <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="@null"
+       
+        android:fastScrollEnabled="true" />
+
+    <LinearLayout
+        android:id="@+id/sideIndex"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:background="#FFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+</LinearLayout>
+ <!-- <ListView
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent" 
+	    android:id="@android:id/list"
+	    android:background="#fff"
+	   
+	    
+	     /> -->
+ 
+     <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            
+            android:id="@+id/main_fragment1">
+    </FrameLayout>
+      
+    
+</LinearLayout>

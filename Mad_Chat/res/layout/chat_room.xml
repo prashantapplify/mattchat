@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout 
+        android:id="@+id/Chat_room_heder"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        
+        android:background="@drawable/navbar">
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:gravity="left">
+            <ImageView 
+                android:id="@+id/ChatRoom_back"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/back_btn"/>
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView 
+                android:id="@+id/ChatRoom_header_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+             
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:gravity="right">
+            <ImageView 
+                android:id="@+id/ChatRoom_Block"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/menu"/>
+        </LinearLayout>
+    </LinearLayout>
+  
+    
+   
+    
+   <LinearLayout 
+       android:id="@+id/chat_room_list_lay"
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:gravity="right"
+        android:layout_below="@+id/Chat_room_heder"
+        android:layout_above="@+id/Chat_room_bottom">
+         <LinearLayout 
+       android:id="@+id/chat_room_list_lay1"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:gravity="right"
+       
+       >
+    <LinearLayout 
+        
+        android:id="@+id/chat_room_list1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:background="#6eb4fd"
+        >
+            <TextView 
+                android:id="@+id/chat_conversation"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Clear Conversation"
+                android:textColor="#fff"
+                android:textSize="14dp"
+                android:singleLine="true"
+                />
+            <View 
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#fff"/>
+            <TextView 
+                android:id="@+id/chat_Block_conversation"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Block Conversation"
+                android:textColor="#fff"
+                android:textSize="14dp"
+                android:singleLine="true"
+                />
+        
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+    <ListView 
+        
+        android:id="@+id/chat_room_list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:fadingEdge="vertical"
+        android:fadeScrollbars="false"
+        
+        android:cacheColorHint="@android:color/transparent"
+        >
+        
+    </ListView>
+</LinearLayout>
+    </LinearLayout>
+   
+
+     <LinearLayout 
+        android:id="@+id/Chat_room_bottom"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:background="#eeeeee"
+        >
+         <LinearLayout 
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_weight="2"
+             android:gravity="center">
+              <ImageView 
+            android:id="@+id/ChatRoom_attached"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/attachment_icon"/>
+         </LinearLayout>
+         <LinearLayout 
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_weight="1"
+             android:gravity="center">
+
+             <EditText
+                 android:id="@+id/send_msg_text"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:maxLines="3"
+             
+                 android:textSize="18sp"
+                 android:hint="Type Something..."
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                 android:paddingTop="5dp"
+                 android:paddingBottom="5dp"
+                 android:background="@drawable/chat_send_textview" />
+
+         </LinearLayout>
+         <LinearLayout 
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_weight="2"
+             android:gravity="center">
+              <ImageView 
+            android:id="@+id/send_msg_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/enter_icon"/>
+         </LinearLayout>
+        
+       
+    </LinearLayout>
+    
+    
+   
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/navbar">
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="left">
+            <ImageView 
+                android:id="@+id/newGroup_back"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/back_btn"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="New Group"
+                android:textColor="#fff"
+                android:textSize="24sp"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="right">
+            <ImageView 
+                android:id="@+id/newGroup_next"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/next_btn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <EditText 
+            android:id="@+id/newGroup_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Group Name"
+            android:textSize="20sp"
+           android:background="#00000000"/>
+       
+    </LinearLayout>
+     <View 
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#4d97e3"/>
+     <EditText 
+         android:layout_height="30dp"
+         android:layout_width="match_parent"
+         android:background="@drawable/name_patch2"
+         android:textColor="#fff"
+         android:focusable="false"/>
+     
+     <ListView 
+         android:layout_height="match_parent"
+         android:layout_width="match_parent">
+         
+     </ListView>
+</LinearLayout>

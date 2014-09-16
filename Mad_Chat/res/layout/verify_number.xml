@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" >
+
+            <ImageView
+                android:id="@+id/Verify_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title_bar"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <TextView
+                android:id="@+id/verify_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Verify"
+                android:textSize="20sp" 
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/Verify_farword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/verify_lay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+      
+        android:orientation="vertical">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Thanks! Did you get the SMS PIN?\nEnter it here :"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+              android:background="@drawable/white_bg"
+              
+              android:gravity="center"
+              android:layout_marginRight="30dp"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+               android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                android:background="@drawable/key_icon"/>
+            <EditText 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Enter your PIN"
+                 android:layout_marginRight="5dp"
+                 android:singleLine="true"
+                 android:textSize="24sp"
+                 android:textColor="#000"
+                android:background="#00000000"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        >
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="Didn't receive an SMS ?"
+            android:textColor="#000"/>
+    </LinearLayout>
+</LinearLayout>

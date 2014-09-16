@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/topbar"
+        >
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+            <ImageView 
+                android:id="@+id/bottom_chat"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/chat_icon"/>
+             <View 
+                android:id="@+id/bottom_chat_line"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#6eb4fd"
+                />
+           <!-- <View 
+                android:id="@+id/bottom_chat_line_selected"
+                android:layout_height="5dp"
+                android:layout_width="match_parent"
+                android:background="#6eb4fd"/> -->
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+             android:gravity="center|bottom"
+             android:orientation="vertical"
+             android:layout_marginTop="5dp">
+            <ImageView 
+                android:id="@+id/bottom_contect"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/contact_icon"/>
+              <View 
+                android:id="@+id/bottom_contact_line"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#6eb4fd"
+                />
+           <!-- <View 
+                android:id="@+id/bottom_contact_line_selected"
+                android:layout_height="5dp"
+                android:layout_width="match_parent"
+                android:background="#6eb4fd"/> -->
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+             android:gravity="center|bottom"
+             android:orientation="vertical"
+             android:layout_marginTop="5dp">
+            <ImageView 
+                android:id="@+id/bottom_more"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/more_icon"/>
+              <View 
+                android:id="@+id/bottom_more_line"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#6eb4fd"
+                />
+            <!-- <View 
+                android:id="@+id/bottom_more_line_selected"
+                android:layout_height="5dp"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:background="#6eb4fd"/> -->
+           
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

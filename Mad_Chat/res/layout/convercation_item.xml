@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/conv_lay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#fff"
+        
+        android:gravity="center">
+         <LinearLayout 
+             android:id="@+id/Conversation_Delete_lay"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="5">
+            <ImageView 
+                android:id="@+id/Conversation_Delete"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/mins_icon_red"/>
+            </LinearLayout>
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2">
+        <TextView 
+            android:id="@+id/conv_name"
+            android:layout_height="wrap_content" 
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:text="sadsads"
+            android:singleLine="true"
+            android:textSize="16sp"
+            />
+          <TextView 
+            android:id="@+id/conv_msg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:singleLine="true"
+            android:text="dafdf"
+            />
+          </LinearLayout>
+            <LinearLayout 
+             android:id="@+id/delete_row"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            
+            
+            android:layout_weight="4">
+            <TextView 
+                android:id="@+id/delete_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                />
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"></LinearLayout>
+
+</LinearLayout>

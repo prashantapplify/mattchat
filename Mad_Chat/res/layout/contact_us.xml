@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/navbar">
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:orientation="vertical">
+            <ImageView 
+                android:id="@+id/contactUs_back"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/back_btn"/>
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Contact us"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:orientation="vertical">
+            
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <EditText 
+            android:id="@+id/contactUs_edit"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text=""
+            android:hint="Please describe your problem."
+            android:textColor="#696969"
+            android:textSize="16sp"
+            android:background="#00000000"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/contactUs_mid_lay"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <View 
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#004a80"/>
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Add Screenshorts (Optional)"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1">
+                 <ImageView 
+                android:id="@+id/contactUs_image1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/addphoto"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                android:layout_weight="1">
+                 <ImageView 
+                     android:id="@+id/contactUs_image2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/addphoto"/>
+            </LinearLayout>
+             <LinearLayout 
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:layout_marginRight="20dp"
+                android:layout_weight="1">
+                 <ImageView 
+                     android:id="@+id/contactUs_image3"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/addphoto"/>
+            </LinearLayout>
+          
+        </LinearLayout>
+         <View 
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#004a80"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="bottom"
+             android:orientation="vertical" >
+
+             <LinearLayout 
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:background="@drawable/topbar">
+             <LinearLayout 
+                 android:id="@+id/contactUs_sendFeedback"
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:background="#6EB4FF">
+                 <TextView 
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:text="Send Feedback"
+                     android:gravity="center"
+                     android:paddingLeft="10dp"
+                     android:paddingRight="10dp"
+                     android:textSize="16sp"
+                     android:paddingTop="5dp"
+                     android:paddingBottom="5dp"
+                     android:textColor="#fff"/>
+             </LinearLayout>
+             </LinearLayout>
+         </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
